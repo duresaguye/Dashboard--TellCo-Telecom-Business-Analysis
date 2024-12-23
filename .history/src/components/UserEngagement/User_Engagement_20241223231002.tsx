@@ -1,7 +1,6 @@
 import React from 'react';
 import ClusterAnalysis from '../ClusterAnalysis/ClusterAnalysis';
 import UsersData from '../UsersData/UsersData';
-import Image from 'next/image';
 
 const BySessionFrequency = [
     { MSISDN: '3.362632e+10', session_frequency: 18, total_duration: 8791927.0, total_download: 7.301517e+09, total_upload: 669650721.0, total_traffic: 7.971167e+09 },

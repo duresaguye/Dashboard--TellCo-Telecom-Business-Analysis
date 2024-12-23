@@ -1,0 +1,34 @@
+{
+  "parser": "@typescript-eslint/parser", // Parse TypeScript
+  "parserOptions": {
+    "ecmaVersion": 2020, // Allows parsing of ECMAScript 2020 features
+    "sourceType": "module", // Allows imports
+    "ecmaFeatures": {
+      "jsx": true // Enables JSX support
+    }
+  },
+  "extends": [
+    "eslint:recommended", // Recommended ESLint rules
+    "plugin:@typescript-eslint/recommended", // Recommended TypeScript rules
+    "plugin:react/recommended", // React plugin recommended rules
+    "plugin:react-hooks/recommended", // React hooks recommended rules
+    "next/core-web-vitals" // Next.js specific rules (including performance-related)
+  ],
+  "plugins": [
+    "@typescript-eslint", // TypeScript plugin
+    "react", // React plugin
+    "react-hooks" // React Hooks plugin
+  ],
+  "rules": {
+    "react/no-unescaped-entities": "off", // Disable the unescaped entities rule
+    "next/no-img-element": "off", // Disable the no-img-element rule
+    "@typescript-eslint/no-unused-vars": "warn", // Show unused variables as warnings
+    "react/prop-types": "off", // Disable prop-types validation if you're using TypeScript
+    "@typescript-eslint/explicit-module-boundary-types": "off" // Allow implicit return types (if you prefer)
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2020": true
+  }
+}

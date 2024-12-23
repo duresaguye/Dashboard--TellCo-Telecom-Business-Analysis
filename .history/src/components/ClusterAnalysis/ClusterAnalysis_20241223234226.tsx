@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Image from 'next/image';
 
 const ClusterAnalysis = () => {
     return (
@@ -43,13 +43,13 @@ const ClusterAnalysis = () => {
             <h2 className="text-lg font-semibold mb-2 text-gray-800">Visual Summary</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div className="flex flex-col items-center">
-                    <img src="/images/seassional.png" alt="Session Frequency by Cluster" className="w-full max-w-md" />
+                    <Image  src="/images/seassional.png" alt="Session Frequency by Cluster" className="w-full max-w-md" />
                 </div>
                 <div className="flex flex-col items-center">
-                    <img src="/images/duration.png" alt="Total Duration by Cluster" className="w-full max-w-md" />
+                    <Image  src="/images/duration.png" alt="Total Duration by Cluster" className="w-full max-w-md" />
                 </div>
                 <div className="flex flex-col items-center">
-                    <img src="/images/traffic.png" alt="Total Traffic by Cluster" className="w-full max-w-md" />
+                    <Image  src="/images/traffic.png" alt="Total Traffic by Cluster" className="w-full max-w-md" />
                 </div>
             </div>
 

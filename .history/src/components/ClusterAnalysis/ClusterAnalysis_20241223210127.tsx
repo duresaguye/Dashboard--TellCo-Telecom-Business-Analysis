@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const ClusterAnalysis = () => {
     return (
         <div className="p-4 rounded-lg">
